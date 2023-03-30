@@ -39,19 +39,27 @@ function CropRecommendationForm() {
     }
     console.log(request);
     console.log(requests.cropApi);
-    const response = await axios.post(requests.cropApi, request);
 
-    console.log(response);
-    const responseData = response.data;
-    console.log("Response data ", responseData);
-    console.log("idr dhyan de");
-    // arr = []
-    console.log(responseData[0]);
-    arr.push(responseData[0]);
-    arr.push(responseData[1]);
-    arr.push(responseData[2]);
-    console.log(arr);
-    resultPage();
+    await axios
+      .post(requests.cropApi, request)
+      .then((response) => {
+        console.log(response);
+        const responseData = response.data;
+        console.log("Response data ", responseData);
+        console.log("idr dhyan de");
+        // arr = []
+        console.log(responseData[0]);
+        arr.push(responseData[0]);
+        arr.push(responseData[1]);
+        arr.push(responseData[2]);
+        console.log(arr);
+        resultPage();
+      })
+      .catch((error) => {
+        if (error) {
+          alert("Enter right inputs");
+        }
+      });
   };
 
   const navigate = useNavigate();
