@@ -40,6 +40,7 @@ function CropRecommendationForm() {
     console.log(request);
     console.log(requests.cropApi);
     const response = await axios.post(requests.cropApi, request);
+
     console.log(response);
     const responseData = response.data;
     console.log("Response data ", responseData);
@@ -74,6 +75,7 @@ function CropRecommendationForm() {
             <div className="input-group input-group-outline mb-4">
               <input
                 type="text"
+                required
                 id="N"
                 name="N"
                 key="N"
@@ -85,6 +87,7 @@ function CropRecommendationForm() {
             <div className="input-group input-group-outline mb-4">
               <input
                 type="text"
+                required
                 id="P"
                 name="P"
                 key="P"
@@ -96,6 +99,7 @@ function CropRecommendationForm() {
             <div className="input-group input-group-outline mb-4">
               <input
                 type="text"
+                required
                 id="K"
                 name="K"
                 key="K"
@@ -107,6 +111,7 @@ function CropRecommendationForm() {
             <div className="input-group input-group-outline mb-4">
               <input
                 type="text"
+                required
                 id="temperature"
                 name="temperature"
                 key="temperature"
@@ -118,6 +123,7 @@ function CropRecommendationForm() {
             <div className="input-group input-group-outline mb-4">
               <input
                 type="text"
+                required
                 id="humidity"
                 name="humidity"
                 key="humidity"
@@ -129,6 +135,7 @@ function CropRecommendationForm() {
             <div className="input-group input-group-outline mb-4">
               <input
                 type="text"
+                required
                 id="ph"
                 name="ph"
                 key="ph"
@@ -140,6 +147,7 @@ function CropRecommendationForm() {
             <div className="input-group input-group-outline mb-4">
               <input
                 type="text"
+                required
                 id="rainfall"
                 key="rainfall"
                 name="rainfall"
