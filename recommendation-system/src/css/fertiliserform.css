@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fertiliser_icon{
+    padding-left: 0.6vw;
+}
+
+.fertiliser-body{
+    margin-left: 6%;
+    margin-top: 8vh;
+    width: 40%;
+}
+
+#crop_type{
+    font-size: 1rem;
+}
+
+#soil_type{
+    font-size: 1rem;
+}

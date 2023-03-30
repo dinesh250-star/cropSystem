@@ -1,0 +1,13 @@
+.weather-container{
+    padding-left: 40%;
+    padding-top: 2%;
+}
+
+.weather-readings{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-adjust{
+    
+}

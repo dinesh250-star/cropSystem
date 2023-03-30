@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.crop_icon{
+    padding-left: 0.6vw;
+}
+
+.card{
+    border-radius: 10px;
+}
+
+
+.form-control::placeholder{
+    color: rgb(160, 160, 160);
+}
+
+.form-heading {
+    padding-top: 2vh;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 1vh;
+    padding-bottom: 1vh;
+    background-color: black;
+    color: white;
+}
+
+.form-control:focus {
+    border-color: rgb(156, 156, 156);
+    box-shadow: none;
+}
+
+.form-body {
+    margin-left: 30%;
+    margin-top: 8vh;
+    width: 40%;
+}
+
+
+.custom-btn {
+    background: #84fab0;
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
